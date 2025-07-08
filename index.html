@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chat Up - Messaging App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="src/IMAGE.jpg" alt="Avatar" />
+            <div class="chat-header-info">
+                <h2>BOO:></h2>
+                <p>Online</p>
+            </div>
+        </div>
+
+        <div class="messages-container" id="messages">
+            <div class="empty-state">
+                <img src="src/IMAGE.jpg" alt="Empty chat illustration" />
+                <h3>Start a conversation</h3>
+                <p>Send BOO:> a message to begin chatting</p>
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" class="message-input" id="messageInput" placeholder="Type a message...">
+            <button class="send-button" id="sendButton">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
